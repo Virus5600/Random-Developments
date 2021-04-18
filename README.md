@@ -1,6 +1,3 @@
-# Random-Developments
-## Random Web, Software Developments, and Simple Library Developments
-<br><br>
 # Available Libraries
 <ul>
   <li><a href="#smooth-scroll">Smooth-Scroll.js</a></li>
