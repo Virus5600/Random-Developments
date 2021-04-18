@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# Random-Developments
+## Random Web, Software Developments, and Simple Library Developments
+<br><br>
+# Available Libraries
+<ul>
+  <li><a href="#smooth-scroll">Smooth-Scroll.js</a></li>
+</ul>
 
-You can use the [editor on GitHub](https://github.com/Virus5600/Random-Developments/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<h1 id="smooth-scroll">Smooth-Scroll.js</h1>
+<p>
+  Smooth-Scroll.js allows smooth scrolling towards an element or object in the same page.
+  To use, just add a `data-scroll-to` tag and then a unique selector to prevent script confusion as this is still in its early testing phase.
+  Example:
+</p>
+```html
+  <img src="https://via.placeholder.com/150" id="sample-image"/>
+  <div style="margin-top:100vh; margin-bottom:100vh;"></div>
+  <button data-scroll-to="sample-image">Back To Top</button>
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Virus5600/Random-Developments/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<p><b>Script:</b></p>
+```html
+<script type="text/javascript" src=""></script>
+```
