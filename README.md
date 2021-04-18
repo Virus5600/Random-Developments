@@ -36,7 +36,7 @@
 </ul>
 
 <h5>Output:</h5>
-<iframe width="100%" height="300" title="Sample for Smooth-Scroll.js v1.0 " src="//jsfiddle.net/Virus5600/3mq8fkgL/4/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" title="Sample for Smooth-Scroll.js v1.0 " src="//jsfiddle.net/Virus5600/3mq8fkgL/4/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 <br>
 <p><b>Script:</b></p>
 ```html
