@@ -1,0 +1,23 @@
+.body {
+	background-color: black;
+	overflow: hidden!important;
+}
+
+.show-password, .hide-password {
+	border-style: solid!important;
+	border-width: 1px!important;
+	border-color: #ced4da!important;
+	border-left-style: none!important;
+	border-top-left-radius: 0!important;
+	border-bottom-left-radius: 0!important;
+	background-color: white!important;
+}
+
+.hidden {
+	display: none!important;
+}
+
+.avatar {
+	max-width: 100%!important;
+	cursor: pointer!important;
+}
