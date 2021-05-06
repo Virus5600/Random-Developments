@@ -1,25 +1,33 @@
-# Available Libraries
-<ul>
-  <li><a href="#smooth-scroll">Smooth-Scroll.js</a></li>
-</ul>
+<html>
+	<head>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+	</head>
+	
+	<body>
+		<h1>Available Libraries</h1>
+		<ul>
+		  <li><a href="#smooth-scroll">Smooth-Scroll.js</a></li>
+		</ul>
 
-<br><br>
-<h1 id="smooth-scroll">Smooth-Scroll.js</h1>
-<p>
-  Smooth-Scroll.js allows smooth scrolling towards an element or object in the same page.
-  To use, just add a `data-scroll-to` tag and then a unique selector to prevent script confusion as this is still in its early testing phase.
-</p>
+		<br><br>
+		<h1 id="smooth-scroll">Smooth-Scroll.js</h1>
+		<p>
+		  Smooth-Scroll.js allows smooth scrolling towards an element or object in the same page.
+		  To use, just add a `data-scroll-to` tag and then a unique selector to prevent script confusion as this is still in its early testing phase.
+		</p>
 
-<p><b>Example:</b></p>
-<iframe width="100%" height="300" title="Sample for Smooth-Scroll.js v1.0 " src="//jsfiddle.net/Virus5600/3mq8fkgL/4/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-<br>
-<h5>Dependencies:</h5>
-<ul>
-  <li><a href="https://jquery.com/">jQuery (v3.0+)</a></li>
-</ul>
-<br>
-<p><b>Script:</b></p>
-```html
-<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/smooth-scroll.js"></script>
-```
----
+		<p><b>Example:</b></p>
+		<iframe width="100%" height="300" title="Sample for Smooth-Scroll.js v1.0 " src="//jsfiddle.net/Virus5600/3mq8fkgL/4/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+		<br>
+		<h5>Dependencies:</h5>
+		<ul>
+		  <li><a href="https://jquery.com/">jQuery (v3.0+)</a></li>
+		</ul>
+		<br>
+		<p><b>Script:</b></p>
+		<pre><code class="lang-html">
+		<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/smooth-scroll.js"></script>
+		</code></pre>
+	</body>
+</html>
