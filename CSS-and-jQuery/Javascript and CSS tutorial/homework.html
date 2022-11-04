@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample Homeowork</title>
+
+		<!-- jQuery 3.6 -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<!-- Popper.js 1.23.5 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha512-Ua/7Woz9L5O0cwB/aYexmgoaD7lw3dWe9FvXejVdgqu71gRog3oJgjSWQR55fwWx+WKuk8cl7UwA1RS6QCadFA==" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap 4.0 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- Local CSS -->
+		<style type="text/css">
+			hr.hr-thick {
+				border-width: .25rem;
+			}
+
+			.border-black {
+				border-color: black;
+			}
+
+			.underline {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	
+	<body class="container-fluid">
+		<div class="row">
+			<div class="col col-lg-4">
+				<h1>Sample Form</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-lg-3 form-group">
+				<label for="first_name">First Name</label>
+				<input type="text" name="first_name" id="first_name" class="form-control" />
+			</div>
+
+			<div class="col col-lg-3 form-group">
+				<label for="middle_name">Middle Name</label>
+				<input type="text" name="middle_name" id="middle_name" class="form-control" />
+			</div>
+
+			<div class="col col-lg-3 form-group">
+				<label for="last_name">Last Name</label>
+				<input type="text" name="last_name" id="last_name" class="form-control" />
+			</div>
+
+			<div class="col col-lg-3 form-group">
+				<label for="suffix">Suffix</label>
+				<input type="text" name="suffix" id="suffix" class="form-control" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-lg-4 form-group">
+				<label for="bday">Birthdate</label>
+				<input type="date" name="bday" id="bday" class="form-control" />
+			</div>
+
+			<div class="col col-lg-4 form-group">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" class="form-control" />
+			</div>
+
+			<div class="col col-lg-4 form-group">
+				<label for="contact">Contact No.</label>
+				<input type="number" name="contact" id="contact" class="form-control" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<input type="button" id="submit" value="Submit" class="btn btn-primary" />
+			</div>
+		</div>
+
+		<hr class="hr-thick">
+
+		<div class="row">
+			<div class="col-12">
+				<label for="full_name">Full Name:</label>
+				<p id="full_name" class="underline"></p>
+			</div>
+
+			<div class="col-12">
+				<label for="birthday">Birthday:</label>
+				<p id="birthday" class="underline"></p>
+			</div>
+
+			<div class="col-12">
+				<label for="e-mail">Email:</label>
+				<p id="e-mail" class="underline"></p>
+			</div>
+
+			<div class="col-12">
+				<label for="contactNo">Contact No:</label>
+				<p id="contactNo" class="underline"></p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#submit").on('click', function(e) {
+					let full_name = $("#first_name").val() + " " + $("#middle_name").val() + " " + $("#last_name").val() + ", " + $("#suffix").val();
+					let birthday = $("#bday").val();
+					let email = $("#email").val();
+					let contact = $("#contact").val();
+
+					$("#full_name").text(full_name);
+					$("#birthday").text(birthday);
+					$("#e-mail").text(email);
+					$("#contactNo").text(contact);
+				});
+			});
+		</script>
+	</body>
+</html>

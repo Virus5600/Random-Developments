@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample JavaScript & CSS</title>
+
+		<!-- jQuery 3.6 -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<!-- Popper.js 1.23.5 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha512-Ua/7Woz9L5O0cwB/aYexmgoaD7lw3dWe9FvXejVdgqu71gRog3oJgjSWQR55fwWx+WKuk8cl7UwA1RS6QCadFA==" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap 4.0 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	
+	<body class="container-fluid">
+		<div class="row">
+			<div class="col col-lg-3">
+				<button class="btn btn-danger" onclick="alert('This is an alert.');">Click for alert</button>
+			</div>
+
+			<div class="col col-lg-3">
+				<button class="btn btn-primary" onclick="prompt('Name: ');">Prompts the User</button>
+			</div>
+
+			<div class="col col-lg-3">
+				<button class="btn btn-secondary" onclick="changeText();">Change text</button><br>
+				<p id="text">Change the text by clicking the button above.</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function changeText() {
+				let txt = prompt("Change text to:");
+				// document.getElementById("text").innerHTML = txt == null || txt == '' ? 'Change the text by clicking the button above.' : txt;
+				$('#text').text(txt == null || txt == '' ? 'Change the text by clicking the button above.' : txt);
+			}
+		</script>
+	</body>
+</html>

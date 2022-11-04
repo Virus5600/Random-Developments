@@ -2,8 +2,8 @@ $(document).ready(function() {
 	$(".readmore").ready(function() {
 		let lines = $('.readmore').attr('data-rm-show-lines');
 		
-		if (lines == 'undefined' || lines == '' || lines == '0')
-			return;
+		if (typeof lines == 'undefined' || lines == 'undefined' || lines == '' || lines == '0')
+			lines = 1;
 		
 		$('.readmore').addClass("readmore-lines-" + lines);
 	});

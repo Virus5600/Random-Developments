@@ -1,38 +1,226 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Random Developments</title>
+		<!-- META DATA -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- SITE META -->
+		<meta name="url" content="https://virus5600.github.io/Random-Developments/">
+		<meta name="type" content="website">
+		<meta name="title" content="Random-Developments">
+		<meta name="description" content="All random personal libraries of Virus5600">
+		<!-- <meta name="image" content="/images/UI/banners/faculty.jpg"> -->
+		<!-- <meta name="image:alt" content="/images/UI/banners/faculty.jpg"> -->
+		<meta name="keywords" content="personal, library, libraries, javascript, jquery, css, css3, html, html5, read more, smooth scroll, scroll, virus5600">
+		<meta name="application-name" content="Random-Developments">
+
+		<!-- OG META -->
+		<meta name="og:url" content="https://virus5600.github.io/Random-Developments/">
+		<meta name="og:type" content="website">
+		<meta name="og:title" content="Random-Developments">
+		<meta name="og:description" content="All random personal libraries of Virus5600">
+		<!-- <meta name="og:image" content="images/UI/banners/faculty.jpg">
+		<meta name="og:image:alt" content="images/UI/banners/faculty.jpg"> -->
+
+		<!-- jQuery 3.6.0 -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<!-- Removes the code that shows up when script is disabled/not allowed/blocked -->
+		<script type="text/javascript" id="for-js-disabled-js">$('head').append('<style id="for-js-disabled">#js-disabled { display: none; }</style>');$(document).ready(function() {$('#js-disabled').remove();$('#for-js-disabled').remove();$('#for-js-disabled-js').remove();});</script>
+
+		<!-- popper.js 1.16.0 -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap 4.4 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		<!-- Darkly Theme for Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/darkly/bootstrap.min.css">
+
+		<!-- Sweet Alert 2 -->
+		<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+
+		<!-- Highlight.js 10.7.2 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/androidstudio.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/d4492f0e4d.js" crossorigin="anonymous"></script>
+
+		<!-- Easy Debug 1.0 -->
+		<script type="text/javascript" src="Easy-Debug-Library/easy-debug.js"></script>
+
+		<!-- Smooth Scroll 1.0 -->
+		<script type="text/javascript" src="Smooth-Scroll-Library/smooth-scroll.js"></script>
+
+		<!-- Local CSS -->
+		<link rel="stylesheet" href="docs/css/styles.css" type="text/css">
+
+		<!-- Favicon -->
+		<link rel='icon' type='image/png' href='https://avatars.githubusercontent.com/u/19548426?v=4'>
 		
-		<!--  -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+		<!-- Title -->
+		<title>Random-Developments | Home</title>
 	</head>
 	
-	<body>
-		<h1>Available Libraries</h1>
-		<ul>
-			<li><a href="#smooth-scroll">Smooth-Scroll.js</a></li>
-		</ul>
+	<body class="custom-scrollbar">
+		<!-- SHOWS THIS INSTEAD WHEN JAVASCRIPT IS DISABLED -->
+		<div id="js-disabled">
+			<style type="text/css">
+				/* Make the element disappear if JavaScript isn't allowed */
+				.js-only {
+					display: none!important;
+				}
+			</style>
+			<div class="row h-100">
+				<div class="col-12 col-md-4 offset-md-4 py-5 my-auto">
+					<div class="card shadow my-auto">
+						<h4 class="card-header card-title text-center">Javascript is Disabled</h4>
 
-		<br><br>
-		<h1 id="smooth-scroll">Smooth-Scroll.js</h1>
-		<p>
-			Smooth-Scroll.js allows smooth scrolling towards an element or object in the same page.
-			To use, just add a `data-scroll-to` tag and then a unique selector to prevent script confusion as this is still in its early testing phase.
-		</p>
+						<div class="card-body">
+							<p class="card-text">This website required <b>JavaScript</b> to run. Please allow/enable JavaScript and refresh the page.</p>
+							<p class="card-text">If the JavaScript is enabled or allowed, please check your firewall as they might be the one disabling JavaScript.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<p><b>Example:</b></p>
-		<iframe width="100%" height="300" title="Sample for Smooth-Scroll.js v1.0 " src="//jsfiddle.net/Virus5600/3mq8fkgL/9/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-		<br>
-		<h5>Dependencies:</h5>
-		<ul>
-		  <li><a href="https://jquery.com/">jQuery (v3.0+)</a></li>
-		</ul>
-		<br>
-		<p><b>Script:</b></p>
-		<pre>
-			<code class="lang-html">
-				<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Smooth-Scroll-Library/smooth-scroll.js"></script>
-			</code>
-		</pre>
+		<div class="d-flex flex-column min-vh-100 js-only">
+			<!-- Navigation Bar (TOP) -->
+			<nav class="navbar navbar-expand-lg position-sticky position-lg-relative dark-shadow py-0 px-3 display-lg-none" id="navbar">
+				<!-- Branding -->
+				<a class="navbar-brand m-0 py-0 text-light" href="{{route('dashboard')}}">Random Developments</a>
+
+				<!-- Navbar Toggler -->
+				<button class="sidebar-toggler" type="button" data-toggle="sidebar-collapse" data-target="#sidebar" aria-controls="sidebar" aria-label="Toggle Sidebar" id="sidebar-toggler">
+					<i class="navbar-toggler-icon fas fa-bars text-light"></i>
+				</button>
+			</nav>
+
+			<div class="d-flex flex-d-row flex-grow-1 overflow-none">
+				<!-- Navigation Bar (SIDE) -->
+				<div class="sidebar dark-shadow custom-scroll d-flex flex-d-col py-3 px-0 collapse-horizontal overflow-y-auto" id="sidebar">
+					<span class="cursor-pointer" data-scroll-to="#easy-debug" data-scroll-parent="container" data-click-condition="$($('#sidebar-toggler').attr('data-target')).hasClass('show')" data-click-action="$('#sidebar-toggler').trigger('click');">Easy Debug</span>
+					<span class="cursor-pointer" data-scroll-to="#readmore" data-scroll-parent="container" data-click-condition="$($('#sidebar-toggler').attr('data-target')).hasClass('show')" data-click-action="$('#sidebar-toggler').trigger('click');">Readmore</span>
+					<span class="cursor-pointer" data-scroll-to="#smooth-scroll" data-scroll-parent="container" data-click-condition="$($('#sidebar-toggler').attr('data-target')).hasClass('show')" data-click-action="$('#sidebar-toggler').trigger('click');">Smooth Scroll</span>
+				</div>
+
+				<!-- Page Contents -->
+				<div class="content flex-fill custom-scrollbar" id="container">
+					<div class="container-fluid my-4">
+						<h1 class="h1-lg h4 text-center">Random Developments</h1>
+						<h5 class="h5-lg h6 text-center">Maintained by <a class="text-light" href="https://github.com/Virus5600">Virus5600</a></h5>
+
+						<!-- EASY DEBUG -->
+						<div class="row mb-5">
+							<div class="col">
+								<h3 id="easy-debug" class="font-weight-bold">Easy Debug</h3>
+								<p>Allows the use of console.log with colors to easily determine what type of message it is.</p>
+								<p>There are four variations of the debug message:</p>
+								<ul>
+									<li><input type="button" class="btn btn-secondary btn-sm py-0 px-1" data-sample="easy-debug" data-ed-type="message" data-ed-message="This is a normal message" value="Message"/> - Displays a gray colored normal message log to the console.</li>
+									<li><input type="button" class="btn btn-primary btn-sm py-0 px-1" data-sample="easy-debug" data-ed-type="info" data-ed-message="This is an information message" value="Information"/> - Displays a light-blue colored message to the console.</li>
+									<li><input type="button" class="btn btn-warning btn-sm py-0 px-1" data-sample="easy-debug" data-ed-type="warning" data-ed-message="This is a warning message" value="Warning"/> - Displays a yellow warning colored message to the console.</li>
+									<li><input type="button" class="btn btn-danger btn-sm py-0 px-1" data-sample="easy-debug" data-ed-type="error" data-ed-message="This is an error message" value="Error"/> - Displays a light-red colored message to the console.</li>
+								</ul>
+
+								<br>
+								<h5>Example</h5>
+								<p>Feel free to click the buttons above to see what they look like.</p>
+								<div class="bg-android-studio overflow-y-auto overflow-x-none custom-scrollbar rounded" id="easy-debug-output">
+								</div>
+
+								<br>
+								<h5>Installation</h5>
+								<div class="btn-group">
+									<pre class="w-min-content my-0 py-0 rounded"><code class="html">&lt;script type="text/javascript" src="https://virus5600.github.io/Random-DevelopmentsEasy-Debug-Library/easy-debug.js"&gt;&lt;/script&gt;</code></pre>
+									<button class="btn btn-secondary py-1" data-toggle="tooltip" title="Copy Script" data-copy-for="easy-debug-script"><i class="fas fa-copy"></i></button>
+								</div><br>
+								<input id="easy-debug-script" type="text" class="hidden" value='<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Easy-Debug-Library/easy-debug.js"></script>'/>
+							</div>
+						</div>
+
+						<hr class="hr-thick-50 bg-light">
+
+						<!-- READMORE -->
+						<div class="row my-5">
+							<div class="col">
+								<h3 id="readmore"  class="font-weight-bold">Readmore</h3>
+								<p>Readmore let's you add basic "Read More" fadeout at the bottom of your div containers.</p>
+
+								<br>
+								<h5>Example</h5>
+								<div class=""></div>
+
+								<br>
+								<h5>Dependencies</h5>
+								<ul>
+									<li><a href="https://jquery.com/" target="_blank">jQuery (v3.0+)</a></li>
+								</ul>
+
+								<br>
+								<h5>Installation</h5>
+								<div class="btn-group">
+									<pre class="w-min-content my-0 py-0 rounded"><code class="html">&lt;script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Smooth-Scroll-Library/smooth-scroll.js"&gt;&lt;/script&gt;</code></pre>
+									<button class="btn btn-secondary py-1" data-toggle="tooltip" title="Copy Script" data-copy-for="smooth-scroll-script"><i class="fas fa-copy"></i></button>
+								</div><br>
+								<input id="smooth-scroll-script" type="text" class="hidden" value='<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Smooth-Scroll-Library/smooth-scroll.js"></script>'/>
+							</div>
+						</div>
+
+						<hr class="hr-thick-50 bg-light">
+
+						<!-- SMOOTH SCROLL -->
+						<div class="row my-5">
+							<div class="col">
+								<h3 id="smooth-scroll"  class="font-weight-bold">Smooth Scroll</h3>
+								<p>Smooth-Scroll.js allows smooth scrolling towards an element or object in the same page. To use, just add a <code class="html">data-scroll-to</code> tag and then a unique selector to prevent script confusion as this is still in its early testing phase.</p>
+
+								<br>
+								<h5>Example</h5>
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<pre class="html numbered bg-android-studio custom-scrollbar rounded">
+											<code class="html">&lt;body&gt;</code>
+											<code class="html">	&lt;img src="https://via.placeholder.com/150" id="sample-image"/&gt;</code>
+											<code class="html">	&lt;div style="margin-top:100vh; margin-bottom:100vh;"&gt;&lt;/div&gt;</code>
+											<code class="html">	&lt;button data-scroll-to="#sample-image"&gt;Back To Top&lt;/button&gt;</code>
+											<code class="html">&lt;/body&gt;</code>
+										</pre>
+									</div>
+
+									<div class="col-12 col-lg-6">
+										<iframe src="docs/sample/smooth-scroll.html" style="max-height: 12.5rem; min-height: 12.5rem;" class="w-100"></iframe>
+									</div>
+								</div>
+
+								<br>
+								<h5>Dependencies</h5>
+								<ul>
+									<li><a href="https://jquery.com/" target="_blank">jQuery (v3.0+)</a></li>
+								</ul>
+
+								<br>
+								<h5>Installation</h5>
+								<div class="btn-group">
+									<pre class="w-min-content my-0 py-0 rounded"><code class="html">&lt;script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Smooth-Scroll-Library/smooth-scroll.js"&gt;&lt;/script&gt;</code></pre>
+									<button class="btn btn-secondary py-1" data-toggle="tooltip" title="Copy Script" data-copy-for="smooth-scroll-script"><i class="fas fa-copy"></i></button>
+								</div><br>
+								<input id="smooth-scroll-script" type="text" class="hidden" value='<script type="text/javascript" src="https://virus5600.github.io/Random-Developments/Smooth-Scroll-Library/smooth-scroll.js"></script>'/>
+							</div>
+						</div>
+
+						<hr class="hr-thick-50 bg-light">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="docs/js/scripts.js"></script>
 	</body>
 </html>
